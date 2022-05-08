@@ -14,7 +14,14 @@ class EmailVerifiedScreen extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            Text('Your email has\nbeen verified!'),
+            Text(
+              'Your email has\nbeen verified!',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
             SizedBox(
               height: 15.0,
             ),
@@ -25,7 +32,11 @@ class EmailVerifiedScreen extends StatelessWidget {
                 color: Color(0XFF89CFF0),
                 child: MaterialButton(
                   onPressed: () {},
-                  child: Text('Click here to continue'),
+                  child: Text(
+                    'Click here to continue',
+                  ),
+                  minWidth: 230.0,
+                  height: 40.0,
                 ),
               ),
             ),

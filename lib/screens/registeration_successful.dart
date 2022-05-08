@@ -14,7 +14,14 @@ class RegisterationSuccessfullScreen extends StatelessWidget {
             SizedBox(
               height: 15.0,
             ),
-            Text('Registeration\nsuccessful!'),
+            Text(
+              'Registeration\nsuccessful!',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),
@@ -26,6 +33,8 @@ class RegisterationSuccessfullScreen extends StatelessWidget {
                 child: MaterialButton(
                   onPressed: () {},
                   child: Text('Gets Started'),
+                  minWidth: 230.0,
+                  height: 40.0,
                 ),
               ),
             ),
