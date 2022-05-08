@@ -5,7 +5,7 @@ import 'package:foca/screens/splash_screen.dart';
 
 import 'screens/onboarding1_screen.dart';
 import 'screens/onboarding_screen.dart';
-import 'screens/verify_email_screen.dart';
+import 'screens/email_verified_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VerifyEmailScreen(),
+      home: EmailVerifiedScreen(),
     );
   }
 }

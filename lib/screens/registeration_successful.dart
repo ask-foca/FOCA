@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class EmailVerifiedScreen extends StatelessWidget {
-  const EmailVerifiedScreen({Key? key}) : super(key: key);
+class RegisterationSuccessfullScreen extends StatelessWidget {
+  const RegisterationSuccessfullScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,22 +10,22 @@ class EmailVerifiedScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/images/email.png'),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text('Your email has\nbeen verified!'),
+            Image.asset('assets/images/success 1.png'),
             SizedBox(
               height: 15.0,
             ),
+            Text('Registeration\nsuccessful!'),
+            SizedBox(
+              height: 20.0,
+            ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
-                borderRadius: BorderRadius.circular(10.0),
                 color: Color(0XFF89CFF0),
+                borderRadius: BorderRadius.circular(30.0),
                 child: MaterialButton(
                   onPressed: () {},
-                  child: Text('Click here to continue'),
+                  child: Text('Gets Started'),
                 ),
               ),
             ),
