@@ -21,7 +21,7 @@ class _LogInState extends State<LogIn> {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Column(
-          children: [
+          children: <Widget>[
             ClipPath(
               clipper: CurveClipper(),
               child: Container(height: 240, color: KColor),
@@ -31,8 +31,11 @@ class _LogInState extends State<LogIn> {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Email",style: lightStyle,),
+                children: <Widget>[
+                  Text(
+                    "Email",
+                    style: lightStyle,
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -49,7 +52,10 @@ class _LogInState extends State<LogIn> {
                   SizedBox(
                     height: 25,
                   ),
-                  Text("Password",style: lightStyle,),
+                  Text(
+                    "Password",
+                    style: lightStyle,
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -82,7 +88,10 @@ class _LogInState extends State<LogIn> {
                           ),
                           onPressed: () {},
                         ),
-                      ),SizedBox(height: 8,),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Row(
                         children: [
                           Text(
