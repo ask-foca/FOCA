@@ -6,6 +6,7 @@ class RegisterationSuccessfullScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,3 +45,8 @@ class RegisterationSuccessfullScreen extends StatelessWidget {
     );
   }
 }
+
+
+//https://youtu.be/c09XiwOZKsI
+
+
