@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
 
-class ForgotPasswordScreen extends StatelessWidget {
+class CreateNewPasswordScreen extends StatelessWidget {
+  const CreateNewPasswordScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +35,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Text(
-                    'Enter the email registered with  your \nwe will send you\ninstructions to reset  your password.',
+                    'Create a new password for your account\nso you can login to access all\n the features.',
                     style: TextStyle(
                       fontSize: 13.0,
                       color: Colors.black,
@@ -44,7 +46,27 @@ class ForgotPasswordScreen extends StatelessWidget {
                     height: 28.0,
                   ),
                   Text(
-                    'Email',
+                    'New Password',
+                    style: lightStyle,
+                  ),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(width: 2, color: KColor),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(width: 2, color: KColor),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  Text(
+                    'Confirm New Password',
                     style: lightStyle,
                   ),
                   SizedBox(
@@ -71,7 +93,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                       child: MaterialButton(
                         onPressed: () {},
                         child: Text(
-                          'Reset Password',
+                          'Login',
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w500,
@@ -81,26 +103,6 @@ class ForgotPasswordScreen extends StatelessWidget {
                         height: 48.0,
                       ),
                     ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        "Not yet a member?",
-                        style: lightStyle,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: Text("Register",
-                            style: TextStyle(
-                              color: Colors.red,
-                              fontWeight: FontWeight.bold,
-                            )),
-                      )
-                    ],
                   ),
                 ],
               ),
